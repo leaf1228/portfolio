@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FukudaSosuke — Game Developer Portfolio</title>
-<meta name="description" content="ゲーム開発者 FukudaSosuke のポートフォリオ。遊びの手触りと堅牢なエンジニアリングの両立。制作ゲーム・職務経歴・スキル。">
+<meta name="description" content="ゲーム開発者 FukudaSosuke のポートフォリオ。遊びの手触りと堅牢なエンジニアリングの両立。制作ゲーム・個人開発アプリ・職務経歴・スキル。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DotGothic16&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -562,10 +562,11 @@ footer{border-top:1px solid var(--line);padding:36px 0 44px}
       プログラミングで呼吸ができる体質なので天職だと思っていますが、イラストもいける口です。<br>
       業界約4年、プランナーとゲームプログラマーの両面から
       新規立ち上げ・リリース・運用タイトルまで計4プロジェクトを担当。
-      Unity/C#の実装に加え、Python/SQLによるデータ解析と機械学習検証にも取り組んできました。
+      Unity/C#の実装に加え、Python/SQLによるデータ解析と機械学習検証にも取り組んできました。<br>
+      2026年からは個人開発に専念し、Swift/SwiftUIで開発したiOSアプリ「Aica」をApp Storeでリリースしています。
     </p>
     <div class="hero-ctas" data-reveal style="--d:.26s">
-      <a class="btn btn-primary" href="#works">開発したーゲームを見る<span class="arr" aria-hidden="true">↗</span></a>
+      <a class="btn btn-primary" href="#works">制作物を見る<span class="arr" aria-hidden="true">↗</span></a>
       <a class="btn btn-ghost" href="#contact">コンタクト<span class="arr" aria-hidden="true">↗</span></a>
     </div>
     <p class="hero-stats" data-reveal style="--d:.34s">
@@ -573,6 +574,7 @@ footer{border-top:1px solid var(--line);padding:36px 0 44px}
       <span>業界経験 <b>4年</b></span><span class="sep" aria-hidden="true">+</span>
       <span>ゲームプログラマー <b>3年</b></span><span class="sep" aria-hidden="true">+</span>
       <span>ゲームプランナー <b>1年</b></span><span class="sep" aria-hidden="true">+</span>
+      <span>個人開発アプリ <b>1本リリース</b></span><span class="sep" aria-hidden="true">+</span>
       <span>インディー開発 <b>2026年 - 現在</b></span>
     </p>
   </div>
@@ -583,7 +585,7 @@ footer{border-top:1px solid var(--line);padding:36px 0 44px}
   <div class="wrap">
     <div class="sec-head" data-reveal>
       <p class="eyebrow"><span data-sprite="pen" data-size="18" aria-hidden="true"></span>WORKS</p>
-      <p class="sub">参画したプロジェクト4件に加え、自主開発中タイトル1件を掲載しています。企画〜実装、運用タイトルの開発支援まで、担当範囲と学びをまとめています。</p>
+      <p class="sub">参画したプロジェクト4件に加え、個人開発でリリースしたiOSアプリ1件と自主開発中タイトル1件を掲載しています。企画〜実装、運用タイトルの開発支援まで、担当範囲と学びをまとめています。</p>
     </div>
 
     <div class="works-stack">
@@ -696,7 +698,38 @@ footer{border-top:1px solid var(--line);padding:36px 0 44px}
         </div>
       </article>
 
-      <!-- 05 Vector（自主開発中） -->
+      <!-- 05 Aica（個人開発・リリース済み） -->
+      <article class="work" data-reveal-card>
+        <div class="work-in">
+          <div class="work-visual">
+            <div class="shell">
+              <img src="./Images/Aica.png" alt="AicaのiPadとiPhoneのスクリーンショット" loading="lazy">
+            </div>
+            <p class="work-stat">STATUS <b>ON APP STORE</b></p>
+          </div>
+          <div class="work-body">
+            <p class="work-num">WORK 05</p>
+            <h3 class="en">AICA</h3>
+            <p class="work-tag">個人開発でリリースしたAIカレンダーアプリ。</p>
+            <ul class="work-meta">
+              <li>iOS / iPadOS</li><li>個人開発</li><li>企画・デザイン・実装・運用</li><li>2026/11 リリース</li>
+            </ul>
+            <p class="work-desc">
+              メモ・タスク・カレンダーをひとつにまとめたiPhone・iPad向けアプリです。
+              思いついたことをメモに書くと端末内のAIが予定とタスクに分けて仮押さえし、
+              「明日の15時から歯医者を1時間」のような自然な日本語で予定の作成・確認・変更・削除もできます。
+              AIにはApple Foundation Modelsを使い、構造化出力とアプリ側の日時計算・検証を組み合わせて、
+              オンデバイスLLMでも誤った予定を保存しない設計にしました。
+              予定はiPhoneのカレンダー、タスクはリマインダーと同期し、ウィジェットやライブアクティビティにも対応。企画からストア公開・運用まで一人で担当しています。
+            </p>
+            <p class="work-link"><a class="work-site" href="https://apps.apple.com/jp/app/id6831474503" target="_blank" rel="noopener noreferrer" aria-label="AicaのApp Storeページを開く">App Storeで見る<span class="arr" aria-hidden="true">↗</span></a></p>
+            <p class="work-link"><a class="work-site" href="https://leaves-app.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Aica公式サイトを開く">公式サイトを開く<span class="arr" aria-hidden="true">↗</span></a></p>
+            <ul class="work-tech"><li>SWIFT</li><li>SWIFTUI</li><li>FOUNDATION MODELS</li><li>EVENTKIT</li><li>WIDGETKIT</li></ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- 06 Vector（自主開発中） -->
       <article class="work" data-reveal-card>
         <div class="work-in">
           <div class="work-visual">
@@ -706,7 +739,7 @@ footer{border-top:1px solid var(--line);padding:36px 0 44px}
             <p class="work-stat">STATUS <b>IN DEVELOPMENT</b></p>
           </div>
           <div class="work-body">
-            <p class="work-num">WORK 05</p>
+            <p class="work-num">WORK 06</p>
             <h3 class="en">VECTOR</h3>
             <p class="work-tag">現在進行中の自主開発タイトル。</p>
             <ul class="work-meta">
@@ -760,10 +793,11 @@ footer{border-top:1px solid var(--line);padding:36px 0 44px}
         <p class="tl-period">2026/01 — NOW</p>
         <span class="tl-mark" aria-hidden="true"></span>
         <div class="tl-body">
-          <h3>自主開発（インディーゲーム制作）</h3>
+          <h3>個人開発（iOSアプリ / インディーゲーム制作）</h3>
           <span class="tl-role">個人開発 / プロジェクト推進</span>
-          <p>退職後も毎日開発を継続。<b>要件定義、進行管理、実装</b>を一人で推進し、
-          企画の核から動作するプロトタイプまでを自走する開発力を磨いています。</p>
+          <p>退職後も毎日開発を継続。<b>要件定義、進行管理、実装</b>を自ら推進し、
+          2026年11月にはSwift/SwiftUIで開発したiOSアプリ<b>「Aica」をApp Storeでリリース</b>しました。
+          ゲーム制作では、自主開発タイトル「Vector」の設計・開発も進めています。</p>
         </div>
       </li>
     </ol>
@@ -809,6 +843,8 @@ footer{border-top:1px solid var(--line);padding:36px 0 44px}
         </div>
         <p class="chips-title">+ ALSO IN MY BAG</p>
         <ul class="chips" data-reveal>
+          <li>Swift / SwiftUI（iOSアプリ個人開発）</li>
+          <li>Apple Foundation Models / EventKit / WidgetKit</li>
           <li>R3</li>
           <li>DDD / MVVM（Unity自主開発）</li>
           <li>Unity LevelPlay</li>
