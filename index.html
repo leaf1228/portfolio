@@ -215,36 +215,13 @@ body.menu-locked{overflow:hidden}
   font-variation-settings:"opsz" 96;
 }
 .hero h1 .l2{color:var(--cobalt)}
-.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:48px;align-items:center}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:48px;align-items:center}
 .hero-name{font-size:14px;font-weight:700;color:var(--ink-2);margin:-14px 0 20px;letter-spacing:.04em}
 .hero-motto{font-size:clamp(19px,2vw,24px);font-weight:900;line-height:1.6;margin-bottom:18px}
 .hero-motto em{font-style:normal;color:var(--cobalt)}
 .hero-lead{max-width:36em;font-size:15px;color:var(--ink-2)}
 .hero-lead p + p{margin-top:10px}
 .hero-lead strong{color:var(--ink);font-weight:700}
-/* pixel mascot card */
-.hero-art{
-  position:relative;width:340px;aspect-ratio:1;
-  background:var(--card);border:1px solid var(--line);border-radius:var(--r-xl);
-  padding:12px;box-shadow:var(--sh-lift);transform:rotate(3deg);
-}
-.hero-art-in{
-  height:100%;border-radius:calc(var(--r-xl) - 8px);
-  background:#0B0F1F;position:relative;overflow:hidden;
-  display:grid;place-items:center;
-}
-.hero-art-in::before{
-  content:"";position:absolute;inset:0;
-  background-image:radial-gradient(rgba(185,196,255,.22) 1px,transparent 1px);
-  background-size:16px 16px;
-}
-.hero-art-in .hop{position:relative}
-.hero-art-in svg rect{fill:#fff}
-.hero-art-hud{
-  position:absolute;left:14px;right:14px;top:12px;display:flex;justify-content:space-between;
-  font-family:var(--f-px);font-size:10px;letter-spacing:.16em;color:var(--cobalt-l);
-}
-.hero-art-hud b{color:#fff;font-weight:400}
 .hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:40px}
 
 .btn{
@@ -547,7 +524,6 @@ footer{border-top:1px solid var(--line);padding:36px 0 44px}
    ============================================================ */
 @media (max-width:1000px){
   .hero-grid{grid-template-columns:1fr}
-  .hero-art{display:none}
   .work-in,.work:nth-child(even) .work-in{grid-template-columns:1fr;gap:8px}
   .work:nth-child(even) .work-visual{order:0}
   .work-body,.work:nth-child(even) .work-body{padding:26px 14px 20px}
@@ -654,12 +630,6 @@ footer{border-top:1px solid var(--line);padding:36px 0 44px}
         <div class="hero-ctas" data-reveal style="--d:.26s">
           <a class="btn btn-primary" href="#works">制作物を見る<span class="arr down" aria-hidden="true">↓</span></a>
           <a class="btn btn-ghost" href="#contact">コンタクト<span class="arr" aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-      <div class="hero-art" data-reveal style="--d:.3s" aria-hidden="true">
-        <div class="hero-art-in">
-          <p class="hero-art-hud"><span>1UP <b>004</b></span><span>HI <b>2026</b></span></p>
-          <span class="hop" data-sprite="invader" data-size="132"></span>
         </div>
       </div>
     </div>
@@ -1008,28 +978,6 @@ var HAS_IO = ('IntersectionObserver' in window);
    ============================================================ */
 var C = '#1433EB', L = '#B9C4FF';
 var SPRITES = {
-  invader: {
-    pal: {'X': C},
-    frames: [[
-      '..X.....X..',
-      '...X...X...',
-      '..XXXXXXX..',
-      '.XX.XXX.XX.',
-      'XXXXXXXXXXX',
-      'X.XXXXXXX.X',
-      'X.X.....X.X',
-      '...XX.XX...'
-    ],[
-      '..X.....X..',
-      'X..X...X..X',
-      'X.XXXXXXX.X',
-      'XXX.XXX.XXX',
-      'XXXXXXXXXXX',
-      '.XXXXXXXXX.',
-      '..X.....X..',
-      '.X.......X.'
-    ]]
-  },
   coin: {
     pal: {'C': C, 'L': L},
     frames: [[
